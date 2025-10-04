@@ -5,10 +5,8 @@ import { resolvePageComponent } from "laravel-vite-plugin/inertia-helpers";
 import { createRoot, hydrateRoot } from "react-dom/client";
 import GuestLayout from "./Layouts/GuestLayout";
 
-const appName = import.meta.env.VITE_APP_NAME || "Laravel";
-
 createInertiaApp({
-    title: (title) => `${title} - ${appName}`,
+    title: (title) => `${title}`,
     resolve: (name) => {
         return resolvePageComponent(
             `./Pages/${name}.jsx`,

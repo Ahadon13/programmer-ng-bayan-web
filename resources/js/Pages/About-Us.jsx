@@ -24,25 +24,25 @@ export default function About() {
             name: "Marvin Estolloso",
             role: "Web Developers",
             image: "../../../storage/assets/images/team/estolloso.jpg",
-            phone: "+63 912 345 6789",
-            email: "john.doe@example.com",
-            linkedin: "https://www.linkedin.com/in/johndoe",
+            phone: "+639197361356",
+            email: "marvinestolloso00592@gmail.com",
+            linkedin: "none",
         },
         {
             name: "John frits Antipuesto",
             role: "Web Developers",
-            image: "../../../storage/assets/images/team/antipuesto.png",
-            phone: "+63 912 345 6789",
-            email: "john.doe@example.com",
-            linkedin: "https://www.linkedin.com/in/johndoe",
+            image: "../../../storage/assets/images/team/antipuesto.jpg",
+            phone: "+639773154164",
+            email: "johnfritzantipuesto2020@gmail.com",
+            linkedin: "https://www.linkedin.com/in/johnfritz-antipuesto",
         },
         {
             name: "Lowell Jay Orcullo",
             role: "Web Developers",
             image: "../../../storage/assets/images/team/orcullo.jpg",
-            phone: "+63 912 345 6789",
-            email: "john.doe@example.com",
-            linkedin: "https://www.linkedin.com/in/johndoe",
+            phone: "+639664885750",
+            email: "lwlljyrcll@gmail.com",
+            linkedin: "www.linkedin.com/in/lowell-jay-orcullo-a41923302",
         },
         {
             name: "Michael Labastida",
@@ -72,17 +72,25 @@ export default function About() {
             name: "Lowell Jay Orcullo",
             role: "Mobile Developers",
             image: "../../../storage/assets/images/team/orcullo.jpg",
-            phone: "+63 912 345 6789",
-            email: "john.doe@example.com",
-            linkedin: "https://www.linkedin.com/in/johndoe",
+            phone: "+639664885750",
+            email: "lwlljyrcll@gmail.com",
+            linkedin: "www.linkedin.com/in/lowell-jay-orcullo-a41923302",
         },
         {
             name: "Marvin Estolloso",
             role: "Arduino Developers",
             image: "../../../storage/assets/images/team/estolloso.jpg",
-            phone: "+63 912 345 6789",
-            email: "john.doe@example.com",
-            linkedin: "https://www.linkedin.com/in/johndoe",
+            phone: "+639197361356",
+            email: "marvinestolloso00592@gmail.com",
+            linkedin: "none",
+        },
+        {
+            name: "Marvin Estolloso",
+            role: "Mobile Developers",
+            image: "../../../storage/assets/images/team/estolloso.jpg",
+            phone: "+639197361356",
+            email: "marvinestolloso00592@gmail.com",
+            linkedin: "none",
         },
     ];
 
@@ -213,10 +221,10 @@ export default function About() {
             </section>
 
             {/* How We Started */}
-            <section className="max-w-7xl mx-auto max-[1280px]:px-5 flex flex-col mt-16">
+            <section className="max-w-7xl mx-auto max-[1280px]:px-5 flex flex-col mt-16 ">
                 <div>
                     <motion.h1
-                        className="text-4xl font-bold"
+                        className="text-4xl font-bold text-neutral-900 dark:text-neutral-200"
                         initial={{ opacity: 0, y: 40 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
@@ -225,7 +233,7 @@ export default function About() {
                     </motion.h1>
                 </div>
                 <motion.div
-                    className="mt-4 text-lightGray leading-relaxed space-y-4 max-[1180px]:w-full w-[800px]"
+                    className="mt-4 text-lightGray leading-relaxed space-y-4 max-[1180px]:w-full w-[800px] text-neutral-900 dark:text-neutral-400"
                     initial={{ opacity: 0, y: 40 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, delay: 0.2 }}
@@ -242,7 +250,7 @@ export default function About() {
                         greater — a team dedicated to helping others through
                         technology. From finding projects to sharpen our skills,
                         we eventually founded
-                        <span className="font-semibold text-primary">
+                        <span className="font-semibold text-primary dark:text-blue-400 shrink-0">
                             {" "}
                             Programmer ng Bayan
                         </span>
@@ -251,9 +259,11 @@ export default function About() {
                     </p>
                     <p>
                         Our founder and CEO,{" "}
-                        <span className="font-semibold">Marvin Estolloso</span>,
-                        is a passionate, business-driven man who strives to help
-                        people in need of assistance with their projects.
+                        <span className="font-semibold dark:text-blue-400">
+                            Marvin Estolloso
+                        </span>
+                        , is a passionate, business-driven man who strives to
+                        help people in need of assistance with their projects.
                         Hisestolloso eagerness to explore, innovate, and solve
                         problems has become the foundation of our culture.
                     </p>
@@ -271,7 +281,7 @@ export default function About() {
                 <div className="flex flex-col items-center justify-center">
                     {/* Heading */}
                     <motion.h1
-                        className="text-4xl font-bold pt-8"
+                        className="text-4xl font-bold pt-8 text-neutral-900 dark:text-white"
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6 }}
@@ -281,7 +291,7 @@ export default function About() {
                     </motion.h1>
 
                     <motion.p
-                        className="text-lg text-lightGray w-full md:w-[80%] text-center pt-1"
+                        className="text-lg text-lightGray w-full md:w-[80%] text-center pt-1 text-neutral-900 dark:text-neutral-300"
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.2 }}
@@ -306,7 +316,7 @@ export default function About() {
                                 className={`rounded-full px-4 py-2 transition ${
                                     activeCategory === category
                                         ? "bg-primary text-white"
-                                        : "bg-whiteGray text-black hover:bg-gray-200"
+                                        : "bg-white text-black hover:bg-gray-200 dark:bg-neutral-800 dark:text-white dark:hover:bg-neutral-700"
                                 }`}
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
@@ -324,7 +334,7 @@ export default function About() {
                         .map((member, index) => (
                             <motion.div
                                 key={index}
-                                className="flex flex-col items-center justify-center p-5 border border-white rounded-md hover:border hover:border-primary"
+                                className="flex flex-col items-center justify-center p-5 border border-white rounded-md hover:border hover:border-primary dark:border-neutral-900 dark:hover:border-white cursor-pointer"
                                 initial={{ opacity: 0, y: 40 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 transition={{
@@ -347,35 +357,40 @@ export default function About() {
                                     viewport={{ once: true }}
                                     whileHover={{ scale: 1.1, rotate: 2 }}
                                 />
-                                <h2 className="text-2xl font-bold whitespace-nowrap">
+                                <h2 className="text-2xl font-bold whitespace-nowrap dark:text-white">
                                     {member.name}
                                 </h2>
-                                <p className="text-lg text-lightGray">
+                                <p className="text-lg dark:text-neutral-400">
                                     {member.role.replace(/s$/, "")}
                                 </p>
 
                                 {/* Contact Info */}
                                 <div className="mt-4 text-start space-y-1">
-                                    <p className="text-sm text-darkGray flex items-center gap-2">
+                                    <p className="text-xs text-neutral-700 dark:text-neutral-400 flex items-center gap-2">
                                         <DynamicIcon
                                             name="phone"
-                                            className="text-primary"
+                                            className="text-primary dark:text-blue-400 shrink-0"
                                             size={18}
                                         />
                                         {member.phone}
                                     </p>
-                                    <p className="text-sm text-darkGray flex items-center gap-2">
+                                    <p className="text-xs text-neutral-700 dark:text-neutral-400 flex items-center gap-2">
                                         <DynamicIcon
                                             name="mail"
-                                            className="text-primary"
+                                            className="text-primary dark:text-blue-400 shrink-0"
                                             size={18}
                                         />
-                                        {member.email}
+                                        <a
+                                            href={`mailto:${member.email}`}
+                                            className="hover:underline"
+                                        >
+                                            {member.email}
+                                        </a>
                                     </p>
-                                    <p className="text-sm text-darkGray flex items-center gap-2">
+                                    <p className="text-xs text-neutral-700 dark:text-neutral-400 flex items-center gap-2">
                                         <DynamicIcon
                                             name="linkedin"
-                                            className="text-primary"
+                                            className="text-primary dark:text-blue-400 shrink-0"
                                             size={18}
                                         />
                                         <a

@@ -1,9 +1,10 @@
 import { Head } from "@inertiajs/react";
-import React, { useEffect } from "react";
+import React, { useEffect, useContext } from "react";
 import Navbar from "@/Components/Navbar";
 import Footer from "@/Components/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { ThemeProvider } from "@/Components/ThemeContext";
 
 export default function GuestLayout({ children, title }) {
     useEffect(() => {
@@ -15,13 +16,15 @@ export default function GuestLayout({ children, title }) {
     }, []);
 
     return (
-        <div className="min-h-screen bg-white dark:bg-neutral-900">
-            <Head title={title} />
-            <Navbar />
+        <ThemeProvider>
+            <div className="min-h-screen bg-white dark:bg-neutral-900">
+                <Head title={title} />
+                <Navbar />
 
-            <main className="w-full overflow-hidden">{children}</main>
+                <main className="w-full overflow-hidden">{children}</main>
 
-            <Footer />
-        </div>
+                <Footer />
+            </div>
+        </ThemeProvider>
     );
 }

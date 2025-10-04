@@ -170,7 +170,7 @@ const AboutUsSection = () => {
     }, []);
 
     return (
-        <section className="px-5 py-16 lg:py-22 bg-white min-h-screen w-full">
+        <section className="px-5 py-16 lg:py-22 bg-white dark:bg-neutral-900 w-full">
             <div className="max-w-7xl mx-auto">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
                     {/* Left Content */}
@@ -181,7 +181,7 @@ const AboutUsSection = () => {
                             id="about-label"
                             className="text-element"
                         >
-                            <span className="text-gray-500 text-sm font-medium tracking-wider uppercase">
+                            <span className="text-gray-500 dark:text-neutral-400 text-sm font-medium tracking-wider uppercase">
                                 About Us
                             </span>
                         </div>
@@ -191,9 +191,11 @@ const AboutUsSection = () => {
                             id="main-heading"
                             className="text-element"
                         >
-                            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+                            <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 dark:text-neutral-500 leading-tight">
                                 The Start of our{" "}
-                                <span className="text-[#103a5e]">Journey!</span>
+                                <span className="text-[#103a5e] dark:text-white">
+                                    Journey!
+                                </span>
                             </h2>
                         </div>
                         {/* Description */}
@@ -202,7 +204,7 @@ const AboutUsSection = () => {
                             id="description"
                             className="text-element"
                         >
-                            <p className="text-gray-600 text-lg leading-relaxed">
+                            <p className="text-gray-600 dark:text-neutral-400 text-lg leading-relaxed">
                                 Programmer ng Bayan is your trusted partner in
                                 innovation—offering services from Arduino and
                                 IoT projects to custom software development,
@@ -219,7 +221,7 @@ const AboutUsSection = () => {
                         >
                             <Link
                                 href={route("about-us")}
-                                className="inline-block bg-transparent border-2 border-[#103a5e] text-[#103a5e] px-8 py-3 rounded-full font-semibold hover:bg-[#103a5e] hover:text-white transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+                                className="inline-block bg-transparent border-2 border-[#103a5e] text-[#103a5e] dark:border-neutral-700 dark:text-white dark:hover:border-[#103a5e] px-8 py-3 rounded-full font-semibold hover:bg-[#103a5e] hover:text-white transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
                             >
                                 Learn More
                             </Link>
@@ -286,13 +288,13 @@ const AboutUsSection = () => {
                         <div
                             data-animate
                             id="float-1"
-                            className="absolute -top-4 -right-4 w-16 h-16 bg-gradient-to-br from-[#103a5e] to-blue-600 rounded-full float-element float-1"
+                            className="absolute -top-4 -right-4 w-16 h-16 bg-gradient-to-br from-[#103a5e] to-blue-600 dark:from-[#103a5e] dark:to-blue-600 rounded-full float-element float-1"
                         ></div>
 
                         <div
                             data-animate
                             id="float-2"
-                            className="absolute -bottom-6 -left-6 w-12 h-12 bg-gradient-to-br from-cyan-400 to-[#103a5e] rounded-full float-element float-2"
+                            className="absolute -bottom-6 -left-6 w-12 h-12 bg-gradient-to-br from-cyan-400 to-[#103a5e] dark:from-cyan-400 dark:to-[#103a5e] rounded-full float-element float-2"
                         ></div>
                     </div>
                 </div>
@@ -501,22 +503,22 @@ const ServicesSection = () => {
     }, []);
 
     return (
-        <section className="py-16 bg-gradient-to-br from-blue-50/30 via-white to-blue-50/20 relative overflow-hidden">
+        <section className="py-16 bg-gradient-to-br from-blue-50/30 via-white to-blue-50/20 dark:from-neutral-950 dark:via-neutral-900 dark:to-neutral-950 relative overflow-hidden">
             {/* Background decorative elements */}
             <div className="absolute inset-0 overflow-hidden">
-                <div className="absolute top-20 left-10 w-32 h-32 bg-[#103a5e]/5 rounded-full blur-2xl animate-pulse"></div>
-                <div className="absolute bottom-32 right-16 w-48 h-48 bg-blue-400/10 rounded-full blur-3xl"></div>
-                <div className="absolute top-1/3 right-1/4 w-24 h-24 bg-[#103a5e]/5 rounded-full blur-xl"></div>
+                <div className="absolute top-20 left-10 w-32 h-32 bg-[#103a5e]/5 dark:bg-neutral-700/20 rounded-full blur-2xl animate-pulse"></div>
+                <div className="absolute bottom-32 right-16 w-48 h-48 bg-blue-400/10 dark:bg-neutral-600/20 rounded-full blur-3xl"></div>
+                <div className="absolute top-1/3 right-1/4 w-24 h-24 bg-[#103a5e]/5 dark:bg-neutral-700/20 rounded-full blur-xl"></div>
             </div>
 
-            <div className="max-w-7xl mx-auto relative z-10 ">
+            <div className="max-w-7xl mx-auto relative z-10">
                 {/* Header */}
                 <div className="text-center mb-20 max-sm:px-5">
                     <div data-animate-service id="services-header">
-                        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8 tracking-tight">
+                        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-neutral-100 mb-8 tracking-tight">
                             Offered Services
                         </h2>
-                        <p className="text-lg md:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-medium">
+                        <p className="text-lg md:text-xl text-gray-600 dark:text-neutral-400 max-w-4xl mx-auto leading-relaxed font-medium">
                             We are committed to delivering high-quality work
                             that exceeds expectations, with every project
                             handled with precision, integrity, and reliability.
@@ -526,7 +528,7 @@ const ServicesSection = () => {
 
                 {/* Services Container */}
                 <div className="relative">
-                    {/* Curved Connecting Line - exactly like in the image */}
+                    {/* Curved Connecting Line */}
                     <div className="hidden lg:block absolute inset-0 pointer-events-none">
                         <svg
                             className="w-full h-full"
@@ -541,21 +543,9 @@ const ServicesSection = () => {
                                     x2="100%"
                                     y2="0%"
                                 >
-                                    <stop
-                                        offset="0%"
-                                        stopColor="#fbbf24"
-                                        stopOpacity="1"
-                                    />
-                                    <stop
-                                        offset="50%"
-                                        stopColor="#f59e0b"
-                                        stopOpacity="1"
-                                    />
-                                    <stop
-                                        offset="100%"
-                                        stopColor="#d97706"
-                                        stopOpacity="1"
-                                    />
+                                    <stop offset="0%" stopColor="#fbbf24" />
+                                    <stop offset="50%" stopColor="#f59e0b" />
+                                    <stop offset="100%" stopColor="#d97706" />
                                 </linearGradient>
                             </defs>
                             <path
@@ -572,7 +562,7 @@ const ServicesSection = () => {
 
                     {/* Services Grid */}
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-5 gap-8">
-                        {services.map((service, index) => {
+                        {services.map((service) => {
                             const Icon = service.icon;
 
                             return (
@@ -587,18 +577,18 @@ const ServicesSection = () => {
                                     }`}
                                 >
                                     {/* Service Card */}
-                                    <div className="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 border border-gray-100/50 hover:border-[#103a5e]/20 group relative overflow-hidden backdrop-blur-sm">
+                                    <div className="bg-white dark:bg-neutral-900 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 border border-gray-100/50 dark:border-neutral-800 hover:border-[#103a5e]/20 group relative overflow-hidden backdrop-blur-sm">
                                         {/* Background Pattern */}
-                                        <div className="absolute inset-0 bg-gradient-to-br from-transparent via-[#103a5e]/2 to-blue-50/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                                        <div className="absolute inset-0 bg-gradient-to-br from-transparent via-[#103a5e]/2 to-blue-50/30 dark:via-neutral-800/40 dark:to-neutral-800/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
                                         {/* Large Background Number */}
-                                        <div className="absolute -top-4 right-0 text-[120px] font-black text-[#103a5e]/5 leading-none select-none group-hover:text-[#103a5e]/10 transition-colors duration-500">
+                                        <div className="absolute -top-4 right-0 text-[120px] font-black text-[#103a5e]/5 dark:text-neutral-700/20 leading-none select-none group-hover:text-[#103a5e]/10 transition-colors duration-500">
                                             {service.number}
                                         </div>
 
                                         {/* Icon Container */}
                                         <div className="relative z-10 mb-6">
-                                            <div className="w-20 h-20 bg-gradient-to-br from-[#103a5e] via-blue-600 to-blue-700 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 shadow-lg group-hover:shadow-xl">
+                                            <div className="w-20 h-20 bg-gradient-to-br from-[#103a5e] via-blue-600 to-blue-700 dark:from-neutral-700 dark:via-neutral-600 dark:to-neutral-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 shadow-lg group-hover:shadow-xl">
                                                 <Icon
                                                     className="w-10 h-10 text-white"
                                                     strokeWidth={1.5}
@@ -613,16 +603,16 @@ const ServicesSection = () => {
 
                                         {/* Content */}
                                         <div className="relative z-10 space-y-4">
-                                            <h3 className="text-2xl font-bold text-gray-900 group-hover:text-[#103a5e] transition-colors duration-300 leading-tight">
+                                            <h3 className="text-2xl font-bold text-gray-900 dark:text-neutral-100 group-hover:text-orange-500 transition-colors duration-300 leading-tight">
                                                 {service.title}
                                             </h3>
-                                            <p className="text-gray-600 leading-relaxed text-base group-hover:text-gray-700 transition-colors duration-300">
+                                            <p className="text-gray-600 dark:text-neutral-400 leading-relaxed text-base group-hover:text-gray-700 dark:group-hover:text-neutral-300 transition-colors duration-300">
                                                 {service.description}
                                             </p>
                                         </div>
 
                                         {/* Decorative Elements */}
-                                        <div className="absolute bottom-4 right-4 w-16 h-16 bg-gradient-to-br from-[#103a5e]/10 to-blue-200/20 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-700 blur-sm"></div>
+                                        <div className="absolute bottom-4 right-4 w-16 h-16 bg-gradient-to-br from-[#103a5e]/10 to-blue-200/20 dark:from-neutral-700/20 dark:to-neutral-600/20 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-700 blur-sm"></div>
                                         <div className="absolute top-1/2 -right-8 w-24 h-24 bg-gradient-to-br from-yellow-200/30 to-orange-300/30 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-500 blur-lg"></div>
                                     </div>
 
@@ -644,7 +634,7 @@ const ServicesSection = () => {
                     id="services-cta"
                     className="text-center mt-16 p-5"
                 >
-                    <div className="bg-gradient-to-r from-[#103a5e] to-blue-600 rounded-2xl p-8 text-white">
+                    <div className="bg-gradient-to-r from-[#103a5e] to-blue-600 dark:from-neutral-800 dark:to-neutral-700 rounded-2xl p-8 text-white">
                         <h3 className="text-3xl font-bold mb-4">
                             Ready to Start Your Project?
                         </h3>
@@ -653,10 +643,10 @@ const ServicesSection = () => {
                             to life with our expertise.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <button className="bg-white text-[#103a5e] px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+                            <button className="bg-white text-[#103a5e] dark:bg-neutral-100 dark:text-neutral-900 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 dark:hover:bg-neutral-200 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
                                 Start Your Project
                             </button>
-                            <button className="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-[#103a5e] transition-all duration-300 transform hover:scale-105">
+                            <button className="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-[#103a5e] dark:hover:text-neutral-900 dark:hover:bg-neutral-100 transition-all duration-300 transform hover:scale-105">
                                 Get Free Consultation
                             </button>
                         </div>
@@ -669,14 +659,11 @@ const ServicesSection = () => {
 
 // Alternating Marquee Component
 const AlternatingMarquee = () => {
-    // Marquee text content
     const marqueeText =
         "FLEXIBLE • RESPONSIVE • SECURE • CUSTOMIZABLE • TECH-SAVVY • INNOVATIVE • SCALABLE • RELIABLE • EFFICIENT • USER-CENTRIC • ";
 
-    // Create multiple copies for seamless loop
     const repeatedText = marqueeText.repeat(3);
 
-    // Styles for the marquee container
     const containerStyle = {
         width: "100%",
         overflow: "hidden",
@@ -685,7 +672,6 @@ const AlternatingMarquee = () => {
         position: "relative",
     };
 
-    // Base row styles
     const rowStyle = {
         display: "flex",
         whiteSpace: "nowrap",
@@ -695,48 +681,43 @@ const AlternatingMarquee = () => {
         marginBottom: "0.3rem",
     };
 
-    // Animation keyframes defined in a style tag
+    // Update colors to Tailwind neutral + dark mode
     const styleSheet = `
     @keyframes marqueeLeft {
-      0% {
-        transform: translateX(0%);
-      }
-      100% {
-        transform: translateX(-33.33%);
-      }
+      0% { transform: translateX(0%); }
+      100% { transform: translateX(-33.33%); }
     }
 
     @keyframes marqueeRight {
-      0% {
-        transform: translateX(-33.33%);
-      }
-      100% {
-        transform: translateX(0%);
-      }
+      0% { transform: translateX(-33.33%); }
+      100% { transform: translateX(0%); }
     }
 
-    .marquee-left {
-      animation: marqueeLeft 50s linear infinite;
-    }
+    .marquee-left { animation: marqueeLeft 50s linear infinite; }
+    .marquee-right { animation: marqueeRight 50s linear infinite; }
 
-    .marquee-right {
-      animation: marqueeRight 50s linear infinite;
-    }
-
+    /* Light Mode */
     .text-solid {
       color: #0066ff;
       -webkit-text-stroke: 0;
     }
-
     .text-outline {
       color: transparent;
       -webkit-text-stroke: 2px #0066ff;
     }
+
+    /* Dark Mode */
+    .dark .text-solid {
+      color: #e5e7eb !important; /* neutral-200 */
+    }
+    .dark .text-outline {
+      color: transparent;
+      -webkit-text-stroke: 2px #e5e7eb !important; /* neutral-200 */
+    }
   `;
 
-    // Function to render text with alternating styles
-    const renderAlternatingText = (text, startWithSolid) => {
-        return text.split(" ").map((word, index) => {
+    const renderAlternatingText = (text, startWithSolid) =>
+        text.split(" ").map((word, index) => {
             const isEven = index % 2 === 0;
             const shouldBeSolid = startWithSolid ? isEven : !isEven;
             return (
@@ -748,91 +729,42 @@ const AlternatingMarquee = () => {
                 </span>
             );
         });
-    };
 
     return (
-        <section className="py-16 bg-gradient-to-br from-blue-100/30 via-white to-blue-200/20 relative overflow-hidden">
+        <section className="py-16 bg-gradient-to-br from-blue-100/30 via-white to-blue-200/20 dark:from-neutral-800 dark:to-neutral-800 relative overflow-hidden transition-colors duration-500">
             <div style={containerStyle}>
                 <style>{styleSheet}</style>
 
-                {/* Top Row - Moves Left, Starts with Solid */}
+                {/* Rows */}
                 <div style={rowStyle}>
-                    <div className="marquee-left" style={{ display: "flex" }}>
-                        <div>{renderAlternatingText(repeatedText, true)}</div>
-                    </div>
-                </div>
-
-                {/* Middle Row - Moves Right, Starts with Outline */}
-                <div style={rowStyle}>
-                    <div className="marquee-right" style={{ display: "flex" }}>
-                        <div>{renderAlternatingText(repeatedText, false)}</div>
-                    </div>
-                </div>
-
-                {/* Bottom Row - Moves Left, Starts with Solid */}
-                <div style={rowStyle}>
-                    <div className="marquee-left" style={{ display: "flex" }}>
-                        <div>{renderAlternatingText(repeatedText, true)}</div>
+                    <div className="marquee-left flex">
+                        {renderAlternatingText(repeatedText, true)}
                     </div>
                 </div>
 
                 <div style={rowStyle}>
-                    <div className="marquee-right" style={{ display: "flex" }}>
-                        <div>{renderAlternatingText(repeatedText, false)}</div>
+                    <div className="marquee-right flex">
+                        {renderAlternatingText(repeatedText, false)}
                     </div>
                 </div>
 
                 <div style={rowStyle}>
-                    <div className="marquee-left" style={{ display: "flex" }}>
-                        <div>{renderAlternatingText(repeatedText, true)}</div>
+                    <div className="marquee-left flex">
+                        {renderAlternatingText(repeatedText, true)}
                     </div>
                 </div>
-            </div>
-        </section>
-    );
-};
 
-// Testimonials Section Component
-const TestimonialsSection = () => {
-    const testimonials = [
-        {
-            quote: "Programmer ng Bayan transformed our Arduino IoT project into a seamless smart home system. Their expertise in both hardware and software development is truly exceptional. The team's dedication to quality and innovation exceeded our expectations.",
-            name: "Maria Santos",
-            src: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop&crop=center",
-        },
-        {
-            quote: "Their web development services helped us launch our e-commerce platform in record time. The attention to detail, responsive design, and smooth user experience have significantly boosted our online sales. Highly recommended!",
-            name: "John Reyes",
-            src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=center",
-        },
-        {
-            quote: "Working with Programmer ng Bayan on our mobile app was a game-changer. They understood our vision perfectly and delivered a solution that our users love. The consultation services helped us make informed technology decisions.",
-            name: "Angela Cruz",
-            src: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=center",
-        },
-        {
-            quote: "The system integration expertise of Programmer ng Bayan helped us streamline our operations. They successfully connected our legacy systems with modern solutions, improving efficiency by 60%. Truly a reliable tech partner!",
-            name: "Roberto Garcia",
-            src: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=center",
-        },
-        {
-            quote: "From concept to deployment, their team handled our Arduino project with professionalism and expertise. The IoT solution they developed has revolutionized our agricultural monitoring system. Outstanding work!",
-            name: "Lisa Mendoza",
-            src: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop&crop=center",
-        },
-    ];
-    return (
-        <section className="py-16 bg-white">
-            <div className="max-w-7xl mx-auto px-5">
-                <div className="text-center mb-16">
-                    <h2 className="text-5xl font-bold text-gray-900 mb-4 tracking-tight">
-                        Testimonials
-                    </h2>
-                    <p className="text-lg text-gray-600">
-                        What our clients say about us
-                    </p>
+                <div style={rowStyle}>
+                    <div className="marquee-right flex">
+                        {renderAlternatingText(repeatedText, false)}
+                    </div>
                 </div>
-                <AnimatedTestimonials testimonials={testimonials} />
+
+                <div style={rowStyle}>
+                    <div className="marquee-left flex">
+                        {renderAlternatingText(repeatedText, true)}
+                    </div>
+                </div>
             </div>
         </section>
     );
@@ -915,7 +847,7 @@ const ProjectTimeline = () => {
         },
     ];
     return (
-        <section className="relative w-full overflow-clip py-16 border-b border-gray-100 ">
+        <section className="relative w-full overflow-clip py-16 border-b border-gray-100 dark:border-neutral-800 bg-gradient-to-br from-blue-50/30 via-white to-blue-50/20 dark:from-neutral-950 dark:via-neutral-900 dark:to-neutral-950">
             {/* Timeline */}
             <Timeline data={data} />
             {/* Modal */}
@@ -925,6 +857,52 @@ const ProjectTimeline = () => {
                 imageSrc={selectedImage}
                 alt="Project preview"
             />
+        </section>
+    );
+};
+
+// Testimonials Section Component
+const TestimonialsSection = () => {
+    const testimonials = [
+        {
+            quote: "Programmer ng Bayan transformed our Arduino IoT project into a seamless smart home system. Their expertise in both hardware and software development is truly exceptional. The team's dedication to quality and innovation exceeded our expectations.",
+            name: "Maria Santos",
+            src: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop&crop=center",
+        },
+        {
+            quote: "Their web development services helped us launch our e-commerce platform in record time. The attention to detail, responsive design, and smooth user experience have significantly boosted our online sales. Highly recommended!",
+            name: "John Reyes",
+            src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=center",
+        },
+        {
+            quote: "Working with Programmer ng Bayan on our mobile app was a game-changer. They understood our vision perfectly and delivered a solution that our users love. The consultation services helped us make informed technology decisions.",
+            name: "Angela Cruz",
+            src: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=center",
+        },
+        {
+            quote: "The system integration expertise of Programmer ng Bayan helped us streamline our operations. They successfully connected our legacy systems with modern solutions, improving efficiency by 60%. Truly a reliable tech partner!",
+            name: "Roberto Garcia",
+            src: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=center",
+        },
+        {
+            quote: "From concept to deployment, their team handled our Arduino project with professionalism and expertise. The IoT solution they developed has revolutionized our agricultural monitoring system. Outstanding work!",
+            name: "Lisa Mendoza",
+            src: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop&crop=center",
+        },
+    ];
+    return (
+        <section className="py-16 bg-white dark:bg-neutral-900">
+            <div className="max-w-7xl mx-auto px-5">
+                <div className="text-center mb-16">
+                    <h2 className="text-5xl font-bold text-gray-900 dark:text-white mb-4 tracking-tight">
+                        Testimonials
+                    </h2>
+                    <p className="text-lg text-gray-600 dark:text-neutral-400 max-w-3xl mx-auto leading-relaxed font-medium">
+                        What our clients say about us
+                    </p>
+                </div>
+                <AnimatedTestimonials testimonials={testimonials} />
+            </div>
         </section>
     );
 };
@@ -967,7 +945,7 @@ export default function Home() {
                         "inset-x-0 inset-y-[-30%] h-[200%] skew-y-12",
                         "opacity-90",
                         "fill-[#103a5e]",
-                        "stroke-[#103a5e]/10",
+                        "stroke-[#103a5e]/10 dark:stroke-neutral-200/5",
                         "max-sm:hidden"
                     )}
                 />
@@ -976,8 +954,8 @@ export default function Home() {
                     data-aos="zoom-in"
                     className="text-center space-y-8 z-10 relative"
                 >
-                    <h1 className="text-xl md:text-5xl font-extrabold flex flex-col text-[#103a5e] ">
-                        <span className="text-4xl md:text-6xl mb-6">
+                    <h1 className="text-2xl md:text-5xl font-extrabold flex flex-col text-[#103a5e] dark:text-white leading-tight">
+                        <span className="text-5xl md:text-6xl mb-6">
                             Programmer ng Bayan
                         </span>
                         <br />
@@ -1001,7 +979,7 @@ export default function Home() {
                             Tech Solutions Partner"
                         </span>
                     </h1>
-                    <p className="sm:text-2xl text-gray-600 max-w-3xl mx-auto">
+                    <p className="sm:text-2xl text-gray-600 dark:text-neutral-400 max-w-3xl mx-auto">
                         From Arduino & IoT projects to custom software
                         development, system integration, and expert consultation
                         - we bring your innovative ideas to life.
@@ -1021,7 +999,7 @@ export default function Home() {
                         </button>
 
                         <button
-                            className={`bg-white border border-[#103a5e] text-[#103a5e] px-6 py-2 rounded-xl font-semibold transition-all duration-700 transform
+                            className={`bg-white border border-[#103a5e] text-[#103a5e] dark:bg-neutral-700 dark:border-neutral-700 dark:text-white px-6 py-2 rounded-xl font-semibold transition-all duration-700 transform
                             ${
                                 showButtons
                                     ? "opacity-100 translate-x-0"

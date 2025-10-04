@@ -9,7 +9,7 @@ const Footer = () => {
     ];
 
     return (
-        <footer className="bg-gray-50 border-t border-gray-200">
+        <footer className="bg-gray-50 border-t border-gray-200 dark:bg-neutral-800 dark:border-neutral-700">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {/* Company Info */}
@@ -22,14 +22,14 @@ const Footer = () => {
                             />
                         </div>
                         <div>
-                            <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
                                 Your{" "}
                                 <span className="text-blue-600">Complete</span>
                             </h3>
-                            <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
                                 Tech Solutions Partner
                             </h3>
-                            <p className="text-gray-600 text-sm leading-relaxed">
+                            <p className="text-gray-600 dark:text-neutral-400 text-sm leading-relaxed">
                                 We bring your innovative ideas to life.
                             </p>
                         </div>
@@ -37,7 +37,7 @@ const Footer = () => {
 
                     {/* Quick Links */}
                     <div className="space-y-4">
-                        <h3 className="text-2xl font-bold text-gray-900">
+                        <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
                             Quick Links
                         </h3>
                         <ul className="space-y-2">
@@ -46,7 +46,7 @@ const Footer = () => {
                                     <Link
                                         key={link.route}
                                         href={route(link.route)}
-                                        className="text-gray-600 hover:text-blue-600 transition-colors duration-200 text-sm"
+                                        className="text-gray-600 dark:text-neutral-400 hover:text-blue-600 transition-colors duration-200 text-sm"
                                     >
                                         {link.label}
                                     </Link>
@@ -58,20 +58,20 @@ const Footer = () => {
                     {/* Contact Info */}
                     <div className="space-y-4">
                         <div>
-                            <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
                                 Contact Us!
                             </h3>
-                            <div className="space-y-2 text-sm text-gray-600">
+                            <div className="space-y-2 text-sm text-gray-600 dark:text-neutral-400">
                                 <p>programmerngbayan@gmail.com</p>
                                 <p>+639955109612</p>
                             </div>
                         </div>
 
                         <div>
-                            <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
                                 Address
                             </h3>
-                            <p className="text-sm text-gray-600 leading-relaxed">
+                            <p className="text-sm text-gray-600 dark:text-neutral-400 leading-relaxed">
                                 Purok 3G, RTU Apokon, Tagum City, Davao del
                                 Norte, Philippines, 8100
                             </p>
@@ -80,8 +80,8 @@ const Footer = () => {
                 </div>
 
                 {/* Copyright */}
-                <div className="mt-8 pt-8 border-t border-gray-200">
-                    <p className="text-sm text-gray-500">
+                <div className="mt-8 pt-8 border-t border-gray-200 dark:border-neutral-700">
+                    <p className="text-sm text-gray-500 dark:text-neutral-400">
                         © 2023 Programmer ng Bayan. All rights reserved.
                     </p>
                 </div>

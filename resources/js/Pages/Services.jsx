@@ -56,7 +56,7 @@ export default function ServicesPage() {
             details:
                 "We deliver cross-platform and native mobile apps that provide seamless user experiences, including offline functionality and app store deployment support.",
             features: [
-                "React Native / Expo",
+                "Flutter & Android/iOS",
                 "Native Modules",
                 "App store deployment",
             ],
@@ -206,11 +206,11 @@ export default function ServicesPage() {
                         </motion.p>
                     </div>
                     {/* Right Side Image / Icon */}
-                    <div className="z-10 flex items-center justify-center absolute max-[1280px]:right-6 right-0 top-6 h-full w-full md:w-auto">
+                    <div className="z-10 hidden md:flex items-center justify-center absolute max-[1280px]:right-6 right-0 top-6 h-full w-full md:w-auto">
                         <motion.img
                             src="../../../storage/assets/images/Handcoding.svg"
                             alt="Technology Illustration"
-                            className="w-80 md:w-[600px] drop-shadow-lg rounded-xl"
+                            className="w-80 md:w-[400px] lg:w-[600px] drop-shadow-lg rounded-xl"
                             initial={{ opacity: 0, y: 40 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8, ease: "easeOut" }}
@@ -280,14 +280,14 @@ export default function ServicesPage() {
                                 >
                                     <div className="flex items-start justify-between gap-4">
                                         <div className="flex items-center gap-3">
-                                            <div className="p-3 rounded-md bg-[#103a5e]/10 text-[#103a5e] dark:text-white">
+                                            <div className="hidden sm:block p-3 rounded-md bg-[#103a5e]/10 text-[#103a5e] dark:bg-neutral-700 dark:text-white">
                                                 <Icon className="w-7 h-7" />
                                             </div>
                                             <div>
-                                                <h4 className="text-lg font-semibold">
+                                                <h4 className="text-lg font-semibold dark:text-white">
                                                     {s.title}
                                                 </h4>
-                                                <p className="text-sm text-neutral-600 dark:text-neutral-300">
+                                                <p className="text-sm text-neutral-600 dark:text-neutral-400">
                                                     {s.short}
                                                 </p>
                                             </div>
@@ -381,56 +381,60 @@ export default function ServicesPage() {
             </section>
 
             {/* Tools Section */}
-            <section className="relative bg-white dark:bg-neutral-900 py-24 overflow-hidden">
-                <GridPattern
-                    strokeDasharray="5 6"
-                    className={cn(
-                        "inset-0 h-full",
-                        "stroke-[#103a5e]/10",
-                        "[mask-image:radial-gradient(900px_circle_at_center,white,transparent)]"
-                    )}
-                />
-                <div className="max-w-6xl mx-auto px-6 z-10">
-                    <header className="mb-12 text-center">
-                        <motion.h2
-                            className="text-4xl md:text-5xl font-extrabold tracking-tight text-[#103a5e] dark:text-white"
-                            initial={{ opacity: 0, y: 40 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.8 }}
-                            viewport={{ once: true }}
-                        >
-                            Tools & Technologies
-                        </motion.h2>
-                        <motion.p
-                            className="mt-3 text-lg text-neutral-700 dark:text-neutral-300 max-w-2xl mx-auto"
-                            initial={{ opacity: 0, y: 40 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 1, delay: 0.2 }}
-                            viewport={{ once: true }}
-                        >
-                            We use modern frameworks and technologies to deliver
-                            secure, scalable, and high-performing solutions.
-                        </motion.p>
-                    </header>
-
-                    {/* Grid of Tools */}
-                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8">
-                        {tools.map((tool, index) => (
-                            <motion.div
-                                key={tool.name}
-                                className="flex flex-col items-center justify-center rounded-xl p-6 shadow-md bg-neutral-50 dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700"
-                                initial={{ opacity: 0, scale: 0.8 }}
-                                whileInView={{ opacity: 1, scale: 1 }}
-                                whileHover={{ scale: 1.1, rotate: 2 }}
+            <section className="relative bg-white dark:bg-neutral-900 py-24">
+                <div className="max-w-7xl mx-auto max-[1280px]:px-6 flex justify-center items-center relative">
+                    <div className="w-full z-10">
+                        <header className="mb-12 text-center">
+                            <motion.h2
+                                className="text-4xl md:text-5xl font-extrabold tracking-tight text-[#103a5e] dark:text-white"
+                                initial={{ opacity: 0, y: 40 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.8 }}
                                 viewport={{ once: true }}
                             >
-                                <div className="text-5xl mb-3">{tool.icon}</div>
-                                <p className="text-sm font-semibold text-neutral-700 dark:text-neutral-200">
-                                    {tool.name}
-                                </p>
-                            </motion.div>
-                        ))}
+                                Tools & Technologies
+                            </motion.h2>
+                            <motion.p
+                                className="mt-3 text-lg text-neutral-700 dark:text-neutral-300 max-w-2xl mx-auto"
+                                initial={{ opacity: 0, y: 40 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 1, delay: 0.2 }}
+                                viewport={{ once: true }}
+                            >
+                                We use modern frameworks and technologies to
+                                deliver secure, scalable, and high-performing
+                                solutions.
+                            </motion.p>
+                        </header>
+
+                        {/* Grid of Tools */}
+                        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8">
+                            {tools.map((tool, index) => (
+                                <motion.div
+                                    key={tool.name}
+                                    className="flex flex-col items-center justify-center rounded-xl p-6 shadow-md bg-neutral-50 dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700"
+                                    initial={{ opacity: 0, scale: 0.8 }}
+                                    whileInView={{ opacity: 1, scale: 1 }}
+                                    whileHover={{ scale: 1.1, rotate: 2 }}
+                                    viewport={{ once: true }}
+                                >
+                                    <div className="text-5xl mb-3">
+                                        {tool.icon}
+                                    </div>
+                                    <p className="text-sm font-semibold text-neutral-700 dark:text-neutral-200">
+                                        {tool.name}
+                                    </p>
+                                </motion.div>
+                            ))}
+                        </div>
                     </div>
+                    <GridPattern
+                        strokeDasharray="5 6"
+                        className={cn(
+                            "stroke-[#103a5e]/10 dark:stroke-neutral-700",
+                            "[mask-image:radial-gradient(900px_circle_at_center,white,transparent)]"
+                        )}
+                    />
                 </div>
             </section>
         </>

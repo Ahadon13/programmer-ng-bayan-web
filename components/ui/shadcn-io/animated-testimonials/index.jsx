@@ -115,16 +115,16 @@ export const AnimatedTestimonials = ({
                         }}
                         className="min-h-0 flex flex-col"
                     >
-                        <h3 className="text-2xl font-bold text-gray-900">
+                        <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
                             {testimonials[active].name}
                         </h3>
-                        <p className="text-sm text-gray-500 mb-6">
+                        <p className="text-sm text-gray-500 dark:text-neutral-400 mb-6">
                             {testimonials[active].designation}
                         </p>
 
                         {/* Fixed overflow with proper height constraint and scrollbar */}
                         <div className="max-h-48 md:max-h-56 overflow-y-auto pr-2 custom-scrollbar">
-                            <motion.p className="text-base md:text-lg text-gray-600 leading-relaxed">
+                            <motion.p className="text-base md:text-lg text-gray-600 dark:text-neutral-400 leading-relaxed">
                                 {testimonials[active].quote
                                     .split(" ")
                                     .map((word, index) => (
