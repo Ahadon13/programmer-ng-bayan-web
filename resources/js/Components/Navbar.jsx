@@ -59,13 +59,16 @@ const Navbar = () => {
             <div className=" px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-16">
                     {/* Logo */}
-                    <div className="flex-shrink-0 w-[75px] flex items-start">
+                    <Link
+                        href={route("home")}
+                        className="flex-shrink-0 w-[75px] flex items-start"
+                    >
                         <img
                             src="../../../storage/assets/images/logo.png"
                             alt="Programmer Logo"
                             className="h-10 w-auto"
                         />
-                    </div>
+                    </Link>
                     {/* Desktop Navigation */}
                     <div className="hidden min-[930px]:block">
                         <div className="ml-10 flex items-baseline space-x-8">

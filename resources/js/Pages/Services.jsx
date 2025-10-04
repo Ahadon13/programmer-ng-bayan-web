@@ -182,6 +182,8 @@ export default function ServicesPage() {
                         duration: 20,
                         repeat: Infinity,
                         ease: "linear",
+                        repeatType: "reverse",
+                        repeatDelay: 1,
                     }}
                 />
                 <div className="w-full max-w-7xl mx-auto h-[400px] max-[1280px]:px-6 py-5 grid grid-cols-1 md:grid-cols-2 gap-8 relative">

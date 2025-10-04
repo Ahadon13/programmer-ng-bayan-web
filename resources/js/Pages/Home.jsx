@@ -925,7 +925,7 @@ export default function Home() {
 
     return (
         <>
-            <section className="max-w-7xl mx-auto max-xl:!mx-5 px-4 sm:px-6 lg:px-8 pt-24 pb-32 mt-20 relative overflow-hidden">
+            <section className="max-w-7xl mx-auto max-xl:!mx-5 sm:px-6 lg:px-8 pt-24 pb-32 mt-20 relative overflow-hidden">
                 <GridPattern
                     squares={[
                         [20, 2],
@@ -954,11 +954,11 @@ export default function Home() {
                     data-aos="zoom-in"
                     className="text-center space-y-8 z-10 relative"
                 >
-                    <h1 className="text-2xl md:text-5xl font-extrabold flex flex-col text-[#103a5e] dark:text-white leading-tight">
+                    <h1 className=" font-extrabold flex flex-col text-[#103a5e] dark:text-white leading-tight">
                         <h1 className="text-5xl md:text-6xl mb-8">
                             Programmer ng Bayan
                         </h1>
-                        <span className="italic">
+                        <span className="italic text-4xl md:text-5xl">
                             "Your{" "}
                             <FlipWords
                                 words={[
@@ -980,13 +980,13 @@ export default function Home() {
                             Tech Solutions Partner"
                         </span>
                     </h1>
-                    <p className="sm:text-2xl text-gray-600 dark:text-neutral-400 max-w-3xl mx-auto">
+                    <p className="text-xl md:text-2xl text-gray-600 dark:text-neutral-400 max-w-3xl mx-auto">
                         From Arduino & IoT projects to custom software
                         development, system integration, and expert consultation
                         - we bring your innovative ideas to life.
                     </p>
                     {/* Buttons with fade + slide animation */}
-                    <div className="pt-14 flex flex-col sm:flex-row gap-4 justify-center">
+                    <div className="pt-14 px-4 flex flex-col sm:flex-row gap-4 justify-center">
                         <button
                             className={`bg-[#103a5e] text-white px-6 py-3 rounded-xl font-semibold transition-all duration-200 transform
                             ${
