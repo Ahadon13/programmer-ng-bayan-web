@@ -411,7 +411,7 @@ export default function ServicesPage() {
                         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8">
                             {tools.map((tool, index) => (
                                 <motion.div
-                                    key={tool.name}
+                                    key={tool.name || index}
                                     className="flex flex-col items-center justify-center rounded-xl p-6 shadow-md bg-neutral-50 dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700"
                                     initial={{ opacity: 0, scale: 0.8 }}
                                     whileInView={{ opacity: 1, scale: 1 }}

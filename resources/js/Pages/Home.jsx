@@ -4,7 +4,7 @@ import { Code, Smartphone, Monitor, Cpu, Zap } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { GridPattern } from "../../../components/ui/shadcn-io/grid-pattern";
 import { AnimatedTestimonials } from "../../../components/ui/shadcn-io/animated-testimonials";
-import { ContainerTextFlip } from "../../../components/ui/container-text-flip";
+import { FlipWords } from "../../../components/ui/shadcn-io/flip-words";
 import { Timeline } from "../../../components/ui/timeline";
 import { ImageModal } from "../../../components/ui/image-modal";
 import { Link } from "@inertiajs/react";
@@ -955,13 +955,12 @@ export default function Home() {
                     className="text-center space-y-8 z-10 relative"
                 >
                     <h1 className="text-2xl md:text-5xl font-extrabold flex flex-col text-[#103a5e] dark:text-white leading-tight">
-                        <span className="text-5xl md:text-6xl mb-6">
+                        <h1 className="text-5xl md:text-6xl mb-8">
                             Programmer ng Bayan
-                        </span>
-                        <br />
+                        </h1>
                         <span className="italic">
                             "Your{" "}
-                            <ContainerTextFlip
+                            <FlipWords
                                 words={[
                                     "Complete",
                                     "Modern",
@@ -975,7 +974,9 @@ export default function Home() {
                                     "Next-gen",
                                     "Intelligent",
                                 ]}
-                            />{" "}
+                                duration={1500}
+                                className="text-blue-600 pb-2"
+                            />
                             Tech Solutions Partner"
                         </span>
                     </h1>
@@ -987,7 +988,7 @@ export default function Home() {
                     {/* Buttons with fade + slide animation */}
                     <div className="pt-14 flex flex-col sm:flex-row gap-4 justify-center">
                         <button
-                            className={`bg-[#103a5e] text-white px-6 py-3 rounded-xl font-semibold transition-all duration-700 transform
+                            className={`bg-[#103a5e] text-white px-6 py-3 rounded-xl font-semibold transition-all duration-200 transform
                             ${
                                 showButtons
                                     ? "opacity-100 translate-x-0"
@@ -999,7 +1000,7 @@ export default function Home() {
                         </button>
 
                         <button
-                            className={`bg-white border border-[#103a5e] text-[#103a5e] dark:bg-neutral-700 dark:border-neutral-700 dark:text-white px-6 py-2 rounded-xl font-semibold transition-all duration-700 transform
+                            className={`bg-white border border-[#103a5e] text-[#103a5e] dark:bg-neutral-700 dark:border-neutral-700 dark:text-white px-6 py-2 rounded-xl font-semibold transition-all duration-200 transform
                             ${
                                 showButtons
                                     ? "opacity-100 translate-x-0"
