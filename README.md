@@ -47,7 +47,7 @@ We are dedicated to turning ideas into powerful digital solutions tailored to yo
 | **Ahadon B. Caraing Jr.** | [@Ahadon13](https://github.com/Ahadon13)         | <img src="https://github.com/Ahadon13.png" width="60" height="60" style="border-radius:50%"/>     |
 | **Mikey**                 | [@Mikey1823](https://github.com/Mikey1823)       | <img src="https://github.com/Mikey1823.png" width="60" height="60" style="border-radius:50%"/>    |
 | **Torbuloloy**            | [@torbuloloy](https://github.com/torbuloloy)     | <img src="https://github.com/torbuloloy.png" width="60" height="60" style="border-radius:50%"/>   |
-| **Batawana Code**         | [@batawanacode](https://github.com/batawanacode) | <img src="https://github.com/batawanacode.png" width="60" height="60" style="border-radius:50%"/> |
+| **Batawana Code**         | [@batawanacode](https://github.com/batawannacode)| <img src="https://github.com/batawannacode.png" width="60" height="60" style="border-radius:50%"/>|
 | **JP**                    | [@jp319](https://github.com/jp319)               | <img src="https://github.com/jp319.png" width="60" height="60" style="border-radius:50%"/>        |
 
 ---
