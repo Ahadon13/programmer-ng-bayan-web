@@ -29,7 +29,7 @@ export default function About() {
             linkedin: "none",
         },
         {
-            name: "John frits Antipuesto",
+            name: "John fritz Antipuesto",
             role: "Web Developers",
             image: "../../../storage/assets/images/team/antipuesto.jpg",
             phone: "+639773154164",

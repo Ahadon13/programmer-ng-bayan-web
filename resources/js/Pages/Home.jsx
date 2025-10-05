@@ -857,6 +857,14 @@ const ProjectTimeline = () => {
                 imageSrc={selectedImage}
                 alt="Project preview"
             />
+            <div className="flex max-sm:px-5 gap-4 justify-center">
+                <a
+                    href={route("projects")}
+                    className="bg-[#103a5e] text-white text-center dark:bg-neutral-100 dark:text-neutral-900 px-8 py-3 rounded-full font-semibold hover:bg-[#0e2a4d] dark:hover:bg-neutral-200 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+                >
+                    View more projects
+                </a>
+            </div>
         </section>
     );
 };

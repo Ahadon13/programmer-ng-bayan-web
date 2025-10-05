@@ -44,13 +44,14 @@ const Navbar = () => {
         { label: "Home", route: "home" },
         { label: "About Us", route: "about-us" },
         { label: "Services", route: "services" },
+        { label: "Projects", route: "projects" },
         { label: "Contact Us", route: "contact-us" },
     ];
 
     return (
         <nav
             data-aos="fade-down"
-            className={`fixed top-5 shadow-[0_0px_15px_rgb(187,187,187,0.26)] left-0 right-0 z-50 transition-all duration-300 max-w-7xl mx-auto max-xl:!mx-5 rounded-lg ${
+            className={`fixed sm:top-5 shadow-[0_0px_15px_rgb(187,187,187,0.26)] left-0 right-0 z-50 transition-all duration-300 max-w-7xl mx-auto max-sm:mx-0 max-xl:mx-5 sm:rounded-lg ${
                 isScrolled
                     ? "opacity-100 bg-white/95 border-b dark:bg-neutral-900/95 dark:border-b dark:border-white/10 backdrop-blur-md"
                     : "opacity-100 bg-white dark:bg-neutral-900/95 backdrop-blur-md"

@@ -39,15 +39,16 @@ Route::get('/services', function () {
         'title' => 'Services - Programmer ng Bayan'
     ]);
 })->name('services');
-Route::get('/portfolio', function () {
-    return Inertia::render('Portfolio', [
-        'title' => 'Portfolio - Programmer ng Bayan'
+Route::get('/projects', function () {
+    return Inertia::render('Projects', [
+        'title' => 'Projects - Programmer ng Bayan'
     ]);
-})->name('portfolio');
+})->name('projects');
 Route::get('/contact-us', function () {
     return Inertia::render('Contact', [
         'title' => 'Contact Us - Programmer ng Bayan'
     ]);
 })->name('contact-us');
+
 
 require __DIR__.'/auth.php';

@@ -246,7 +246,7 @@ export default function ServicesPage() {
                 <div className="relative max-w-6xl mx-auto px-6">
                     <header className="mb-12 text-center">
                         <motion.h2
-                            className="text-4xl md:text-5xl font-extrabold tracking-tight text-[#103a5e] dark:text-white"
+                            className="text-4xl font-extrabold tracking-tight text-neutral-900 dark:text-white"
                             initial={{ opacity: 0, y: 40 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8 }}
@@ -254,7 +254,7 @@ export default function ServicesPage() {
                             What We Offer
                         </motion.h2>
                         <motion.p
-                            className="mt-3 text-lg text-neutral-700 dark:text-neutral-300 max-w-2xl mx-auto"
+                            className="mt-2 text-lg text-neutral-900 dark:text-neutral-300 max-w-2xl mx-auto"
                             initial={{ opacity: 0, y: 40 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 1, delay: 0.2 }}
@@ -388,7 +388,7 @@ export default function ServicesPage() {
                     <div className="w-full z-10">
                         <header className="mb-12 text-center">
                             <motion.h2
-                                className="text-4xl md:text-5xl font-extrabold tracking-tight text-[#103a5e] dark:text-white"
+                                className="text-4xl font-extrabold tracking-tight text-neutral-900 dark:text-white"
                                 initial={{ opacity: 0, y: 40 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.8 }}
@@ -397,7 +397,7 @@ export default function ServicesPage() {
                                 Tools & Technologies
                             </motion.h2>
                             <motion.p
-                                className="mt-3 text-lg text-neutral-700 dark:text-neutral-300 max-w-2xl mx-auto"
+                                className="mt-2 text-lg text-neutral-900 dark:text-neutral-300 max-w-2xl mx-auto"
                                 initial={{ opacity: 0, y: 40 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 1, delay: 0.2 }}

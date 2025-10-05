@@ -5,6 +5,7 @@ const Footer = () => {
         { label: "Home", route: "home" },
         { label: "About Us", route: "about-us" },
         { label: "Services", route: "services" },
+        { label: "Projects", route: "projects" },
         { label: "Contact Us", route: "contact-us" },
     ];
 
@@ -80,9 +81,30 @@ const Footer = () => {
                 </div>
 
                 {/* Copyright */}
-                <div className="mt-8 pt-8 border-t border-gray-200 dark:border-neutral-700">
+                <div className="mt-8 pt-8 border-t flex gap-5 justify-between items-center border-gray-200 dark:border-neutral-700">
                     <p className="text-sm text-gray-500 dark:text-neutral-400">
                         © 2023 Programmer ng Bayan. All rights reserved.
+                    </p>
+                    <p className="text-sm text-gray-500 dark:text-neutral-400">
+                        Designed by{" "}
+                        <a
+                            href="https://github.com/Mikey1823"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-blue-600 hover:underline"
+                        >
+                            Mikey1823
+                        </a>{" "}
+                        and Developed by{" "}
+                        <a
+                            href="https://github.com/Ahadon13"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-blue-600 hover:underline"
+                        >
+                            Ahadon13
+                        </a>
+                        .😎
                     </p>
                 </div>
             </div>
