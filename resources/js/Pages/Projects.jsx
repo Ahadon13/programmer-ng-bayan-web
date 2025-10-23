@@ -27,7 +27,7 @@ const projects = [
         title: "Growify",
         description:
             "Growify is a real-time plant monitoring system for mushrooms using Arduino and IoT technology. It provides real-time data on soil moisture, temperature, humidity, and light levels through a mobile app.",
-        tags: ["Laravel", "IoT", "Arduino"],
+        tags: ["Flutter", "IoT", "Arduino"],
         images: [
             "../../../storage/assets/images/growify/growify_ui.jpg",
             "../../../storage/assets/images/growify/growify_dashboard.jpg",
